@@ -1,0 +1,91 @@
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	       -box-sizing: border-box;
+}
+
+.clear:before,
+.clear:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+.title-section {
+	position: relative;
+	width: 390px;
+    margin: 30px auto 5px;
+    
+}
+
+h1 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 30px;
+	text-align: center;
+	background: yellow;
+}
+
+button {
+	float: left;
+	font-family: cursive;
+	font-size: 16px;
+	width: 100px;
+
+}
+
+.currentPlayer {
+	float: right;
+	font-family: cursive;
+	font-size: 16px;
+	width: 130px;
+	padding-top: 8px;
+}
+
+.board {
+	width: 390px;
+	height: 390px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #bfbfbf;
+	box-shadow: 8px 8px 8px gray;
+}
+
+.square {
+	float: left;
+	width: 130px;
+	height: 130px;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 80px;
+}
+
+.square:nth-child(3),
+.square:nth-child(6),
+.square:nth-child(9){
+	border-right: none;
+}
+
+.square:nth-child(7),
+.square:nth-child(8),
+.square:nth-child(9){
+	border-bottom: none;
+}
+
+.result{
+	position: absolute;
+	display: none;
+	top: 150px;
+	left: 100px;
+	width: 200px;
+	height: 50px;
+	background: #3a3a3a;
+	color: #fff;
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px; 
+	text-align: center;
+	padding-top: 20px;
+}
